@@ -33,7 +33,7 @@
          "MageReactor\\CatalogExtended\\":""
       }
    },
-   "minimum-stability": "stable",
+   "prefer-stable": false,
    "repositories": [
        {
            "type": "composer",
