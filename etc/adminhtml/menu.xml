@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+                id="MageReactor_CatalogExtended::catalog_extended"
+                title="Catalog Extended"
+                translate="title"
+                module="MageReactor_CatalogExtended"
+                sortOrder="0"
+                parent="MageReactor_Base::main"
+                resource="MageReactor_CatalogExtended::catalog_extended"/>
+
+        <add
+                id="MageReactor_CatalogExtended::catalog_extended_settings"
+                title="Catalog Extended Config"
+                translate="title"
+                module="MageReactor_CatalogExtended"
+                sortOrder="0"
+                parent="MageReactor_CatalogExtended::catalog_extended"
+                action="admin/system_config/edit/section/catalog_extended"
+                resource="MageReactor_CatalogExtended::catalog_extended_settings"/>
+    </menu>
+</config>
