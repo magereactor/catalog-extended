@@ -1,43 +1,43 @@
 {
-    "name": "magereactor/catalog-extended",
-    "description": "Magento 2 sstest Group Simple Products of Configurable Product using Color attribute",
-    "keywords":[
-        "catalog extended",
-        "catalogextended",
-        "magento2 configurable split",
-        "magento 2 split configurable",
-        "configurable products group by color",
-        "magento 2 configurable grouped"
-    ],
-    "require":{
-        "php": ">=7.1.3"
-    },
-    "type":"magento2-module",
-    "version":"1.0.0",
-    "license":[
-       "OSL-3.0",
-       "AFL-3.0"
-    ],
-    "authors":[
+   "name": "magereactor/catalog-extended",
+   "description": "Magento 2 sstest Group Simple Products of Configurable Product using Color attribute",
+   "keywords":[
+       "catalog extended",
+       "catalogextended",
+       "magento2 configurable split",
+       "magento 2 split configurable",
+       "configurable products group by color",
+       "magento 2 configurable grouped"
+   ],
+   "require":{
+       "php": ">=7.1.3"
+   },
+   "type":"magento2-module",
+   "version":"1.0.0",
+   "license":[
+      "OSL-3.0",
+      "AFL-3.0"
+   ],
+   "authors":[
+      {
+         "name":"Faizan Pervaiz",
+         "email":"faixanpervaix@gmail.com",
+         "role":"Magento 2 Developer"
+      }
+   ],
+   "autoload":{
+      "files":[
+         "registration.php"
+      ],
+      "psr-4":{
+         "MageReactor\\CatalogExtended\\":""
+      }
+   },
+   "minimum-stability": "stable",
+   "repositories": [
        {
-          "name":"Faizan Pervaiz",
-          "email":"faixanpervaix@gmail.com",
-          "role":"Magento 2 Developer"
+           "type": "composer",
+           "url": "https://github.com/magereactor/catalog-extended"
        }
-    ],
-    "autoload":{
-       "files":[
-          "registration.php"
-       ],
-       "psr-4":{
-          "MageReactor\\CatalogExtended\\":""
-       }
-    },
-
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://github.com/magereactor/catalog-extended"
-        }
-    ]
+   ]
 }
