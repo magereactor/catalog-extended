@@ -17,6 +17,9 @@ Under Stores -> Configuration -> MageReactor -> Catalog Extended -> General
 
 Currently only simple products of configruables' prodcuts can be assigned to a category. These products will be grouped according to the attribute defined in the aftorementioned store configuration. 
 
+### Compatiblity
+Currently this module is compatible with Magento 2.4.x
+
 ## Install
 
 ### Composer

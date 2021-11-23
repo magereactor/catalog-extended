@@ -11,9 +11,9 @@
    ],
    "minimum-stability": "stable",
    "require":{
-       "php": ">=7.1.3",
-       "magereactor/base": "1.0.0",
-       "magento/framework": "102.0.*"
+      "php": "~7.3.0||~7.4.0",
+      "magento/framework": "103.0.*",
+       "magereactor/base": "1.0.0"
    },
    "type":"magento2-module",
    "version":"1.0.0",
