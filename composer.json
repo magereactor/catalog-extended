@@ -12,7 +12,7 @@
    "minimum-stability": "stable",
    "require":{
       "php": "~7.3.0||~7.4.0",
-      "magereactor/base": "1.0.0"
+      "magereactor/base": "2.0.0"
    },
    "type":"magento2-module",
    "version":"4.0.0",
