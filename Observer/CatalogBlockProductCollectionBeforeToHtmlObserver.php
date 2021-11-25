@@ -11,12 +11,12 @@ class CatalogBlockProductCollectionBeforeToHtmlObserver implements ObserverInter
     /**
      * @var Data
      */
-    private $helper;
+    private Data $helper;
 
     /**
-     * @var
+     * @var ModifyProductCollectionBeforeToHtml
      */
-    private $modifyCollection;
+    private ModifyProductCollectionBeforeToHtml $modifyCollection;
 
     /**
      * @param Data $helper
@@ -32,6 +32,7 @@ class CatalogBlockProductCollectionBeforeToHtmlObserver implements ObserverInter
     /**
      * @param Observer $observer
      * @return $this|void
+     * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
     public function execute(Observer $observer)
     {

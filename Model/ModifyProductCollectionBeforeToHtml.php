@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace MageReactor\CatalogExtended\Model;
 
 use Magento\Catalog\Model\ResourceModel\Product\Collection;
@@ -24,17 +26,17 @@ class ModifyProductCollectionBeforeToHtml
     /**
      * @var Configurable
      */
-    private $configurable;
+    private Configurable $configurable;
 
     /**
      * @var UrlRewriteCollection
      */
-    private $urlRewriteCollection;
+    private UrlRewriteCollection $urlRewriteCollection;
 
     /**
      * @var Config
      */
-    private $config;
+    private Config $config;
 
     /**
      * @var string
@@ -59,7 +61,7 @@ class ModifyProductCollectionBeforeToHtml
     /**
      * @param Collection $collection
      * @param null $attributeCode
-     * @return $this|void
+     * @return $this
      */
     public function getModifiedCollection(Collection $collection, $attributeCode = null)
     {
@@ -112,7 +114,7 @@ class ModifyProductCollectionBeforeToHtml
      * @param ProductInterface $product
      * @return array
      */
-    private function getDefaultColor(ProductInterface $product)
+    private function getDefaultColor(ProductInterface $product): array
     {
         try {
             if($this->attributeCode) {

@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace MageReactor\CatalogExtended\Setup\Patch\Data;
 
 use Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface;
@@ -16,13 +18,13 @@ class AddConfigSplitAttribute implements DataPatchInterface
      *
      * @var ModuleDataSetupInterface
      */
-    private $moduleDataSetup;
+    private ModuleDataSetupInterface $moduleDataSetup;
     /**
      * EavSetupFactory
      *
      * @var EavSetupFactory
      */
-    private $eavSetupFactory;
+    private EavSetupFactory $eavSetupFactory;
     /**
      * @param ModuleDataSetupInterface $moduleDataSetup
      * @param EavSetupFactory          $eavSetupFactory
@@ -58,7 +60,7 @@ class AddConfigSplitAttribute implements DataPatchInterface
     /**
      * {@inheritdoc }
      */
-    public function getAliases()
+    public function getAliases(): array
     {
         return [];
     }
@@ -66,7 +68,7 @@ class AddConfigSplitAttribute implements DataPatchInterface
     /**
      * {@inheritdoc }
      */
-    public static function getDependencies()
+    public static function getDependencies(): array
     {
         return [];
     }

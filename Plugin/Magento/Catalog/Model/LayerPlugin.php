@@ -9,7 +9,7 @@ class LayerPlugin
     /**
      * @var Data
      */
-    private $helper;
+    private Data $helper;
 
     /**
      * @param Data $helper
